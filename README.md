@@ -1,2 +1,2 @@
 # spring-boot-sqlite
-SpringBoot项目集成SQLite嵌入式数据库，实现离线储存数据并持久化到硬盘，支持Windows或Liunx系统直接拷贝并运行
+SpringBoot项目集成SQLite嵌入式数据库，实现离线储存数据并持久化到硬盘，支持Windows或Liunx系统直接拷贝并运行;
