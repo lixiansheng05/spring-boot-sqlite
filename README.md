@@ -1,7 +1,7 @@
 ## Spring-Boot-SQLite
 ### 一、简介
 ~~~
-  SpringBoot+mybatis-plus项目集成SQLite嵌入式数据库，支持Windows或Liunx系统直接拷贝并运行spring-boot项目集成Sqlite。
+  SpringBoot+mybatis-plus项目集成SQLite嵌入式数据库，支持Windows或Liunx系统等跨系统直接拷贝并运行。
   使用技术：
       spring-boot、mybatis-plus、dynamic-datasource、sqlite、Swagger;
   实现功能：
