@@ -35,25 +35,25 @@ public class PoiDataController {
     @Autowired
     IPoiCollectInfo2Service poiCollectInfo2Service;
 
-    @ApiOperation(value = "-列表", notes = "-列表")
+    @ApiOperation(value = "-db1-分页列表", notes = "-列表")
     @GetMapping(value = "/list")
     public IPage<PoiCollectInfo> queryList() {
-        return poiCollectInfoService.page(new Page<PoiCollectInfo>(1, 2), null);
+        return poiCollectInfoService.page(new Page<PoiCollectInfo>(1, 10), null);
     }
 
-    @ApiOperation(value = "-列表989", notes = "-列表955")
+    @ApiOperation(value = "-db1-列表", notes = "-列表955")
     @GetMapping(value = "/list45")
     public IPage<PoiOriginalInfo> queryList665() {
-        return poiOriginalInfoService.page(new Page<PoiOriginalInfo>(10, 20), null);
+        return poiOriginalInfoService.page(new Page<PoiOriginalInfo>(1, 10), null);
     }
 
-    @ApiOperation(value = "-列表222", notes = "-列表")
+    @ApiOperation(value = "-db2-列表", notes = "-列表")
     @GetMapping(value = "/list2")
     public List<PoiCollectInfo> queryList2() {
         return poiCollectInfo2Service.list();
     }
 
-    @ApiOperation(value = "-上传文件", notes = "-上传文件")
+    @ApiOperation(value = "-上传文件-db2数据同步至db1", notes = "-上传文件-db2数据同步至db1")
     @PostMapping(value = "/uploadFile")
     public boolean uploadFile(PoiDataUploadFileDto dto) {
         try {

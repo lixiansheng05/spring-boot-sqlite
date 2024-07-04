@@ -12,6 +12,7 @@ spring:
       datasource:
         db1:
           driver-class-name: org.sqlite.JDBC
+          #获取项目存放路径+当前操作系统分隔符+sqlite3+当前操作系统分隔符+数据库文件名
           url: jdbc:sqlite:${user.dir}${file.separator}sqlite3${file.separator}huanbaoducha_db1.db
         db2:
           driver-class-name: org.sqlite.JDBC
